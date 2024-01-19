@@ -12,10 +12,7 @@ const App: React.FC = () => {
       <CssBaseline />
       <BrowserRouter>
         <Routes>
-          <Route
-            path="https://s77a327q.github.io/komatsuzaki-s-portfolio/"
-            element={<Home />}
-          />
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
