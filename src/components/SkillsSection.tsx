@@ -14,18 +14,18 @@ const SkillCard: React.FC<SkillCardProps> = ({
   skillLevel,
 }) => (
   <Grid container columnSpacing={2}>
-    <div style={{ width: "10rem" }}>
+    <div style={{ width: "8rem" }}>
       <Typography>{skill}</Typography>
     </div>
     {useMediaQuery("(min-width:600px)") ? (
-      <div style={{ width: "10rem" }}>
+      <div style={{ width: "8rem" }}>
         <Typography>{experience}</Typography>
       </div>
     ) : (
       <></>
     )}
 
-    <div style={{ width: "10rem" }}>
+    <div style={{ width: "8rem" }}>
       <Rating precision={0.5} name="read-only" value={skillLevel} readOnly />
     </div>
   </Grid>
@@ -53,18 +53,18 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ title, skills }) => {
       </Typography>
       <Box sx={{ mt: 2 }} />
       <Grid container columnSpacing={2}>
-        <div style={{ width: "10rem" }}>
+        <div style={{ width: "8rem" }}>
           <Typography sx={{ fontWeight: "bold" }}>技術名</Typography>
         </div>
         {useMediaQuery("(min-width:600px)") ? (
-          <div style={{ width: "10rem" }}>
+          <div style={{ width: "8rem" }}>
             <Typography sx={{ fontWeight: "bold" }}>経験年数</Typography>
           </div>
         ) : (
           <></>
         )}
 
-        <div style={{ width: "10rem" }}>
+        <div style={{ width: "8rem" }}>
           <Typography sx={{ fontWeight: "bold" }}>スキルレベル</Typography>
         </div>
       </Grid>
