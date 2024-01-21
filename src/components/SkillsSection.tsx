@@ -1,9 +1,6 @@
 // src/pages/Home.tsx
 import React from "react";
-import myImage from "../static/images/header_logo.png";
 import { Typography, Box, Grid, Rating, useMediaQuery } from "@mui/material";
-
-import { styled } from "@mui/system";
 
 interface SkillCardProps {
   skill: string;

@@ -53,17 +53,23 @@ const Welcome: React.FC = () => {
         id="welcome"
         sx={{
           backgroundColor: "#79c6b6",
-          height: { xs: "100vh", sm: "calc(100vh - 60px)" },
+          height: { xs: "102vh", sm: "calc(100vh - 60px)" },
           width: "100%",
           paddingTop: "6rem",
           textAlign: "center",
         }}
       >
         <Box sx={{ display: "grid", justifyContent: "center" }}>
-          <TitleText style={titleTextPropsX} sx={{ fontSize: "4.2rem" }}>
+          <TitleText
+            style={titleTextPropsX}
+            sx={{ fontSize: { xs: "3rem", sm: "4.2rem" } }}
+          >
             Welcome!!
           </TitleText>
-          <TitleText style={titleTextPropsY} sx={{ fontSize: "2rem" }}>
+          <TitleText
+            style={titleTextPropsY}
+            sx={{ fontSize: { xs: "1.5rem", sm: "2rem" } }}
+          >
             Komatsuzaki's Portfolio
           </TitleText>
           <BoxAnime style={imageTextPropsY}>

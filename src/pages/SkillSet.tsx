@@ -34,7 +34,7 @@ const SkillSet: React.FC = () => {
         textAlign: "center",
         height: { sm: "calc(100vh - 60px)" },
         paddingTop: { xs: "3rem", sm: "6rem" },
-        px: { xs: "20px" },
+        px: { xs: "10px" },
       }}
     >
       <TitleText sx={{ fontSize: "3rem", marginBottom: "1rem" }}>
@@ -44,19 +44,25 @@ const SkillSet: React.FC = () => {
         私がこれまでに学習・習得した言語やツールについて星五段階で自己評価しました
       </Typography>
       <Grid sx={{ gap: "0 15px", justifyContent: "center" }} container>
-        <Card sx={{ opacity: "0.6", width: "max-content" }}>
+        <Card
+          sx={{ opacity: "0.6", width: { xs: "24rem", sm: "max-content" } }}
+        >
           <CardContent>
             <SkillsSection title="デザインスキル" skills={designSkills} />
           </CardContent>
         </Card>
         <Box sx={{ mt: { xs: 2, sm: 0 } }} />
-        <Card sx={{ opacity: "0.6", width: "max-content" }}>
+        <Card
+          sx={{ opacity: "0.6", width: { xs: "24rem", sm: "max-content" } }}
+        >
           <CardContent>
             <SkillsSection title="フロントエンド" skills={frontendSkills} />
           </CardContent>
         </Card>
         <Box sx={{ mt: { xs: 2, sm: 0 } }} />
-        <Card sx={{ opacity: "0.6", width: "max-content" }}>
+        <Card
+          sx={{ opacity: "0.6", width: { xs: "24rem", sm: "max-content" } }}
+        >
           <CardContent>
             <SkillsSection title="バックエンド" skills={backendSkills} />
           </CardContent>
@@ -65,19 +71,25 @@ const SkillSet: React.FC = () => {
       </Grid>
       <Box sx={{ mt: { xs: 0, sm: 2 } }} />
       <Grid sx={{ gap: "0 15px", justifyContent: "center" }} container>
-        <Card sx={{ opacity: "0.6", width: "max-content" }}>
+        <Card
+          sx={{ opacity: "0.6", width: { xs: "24rem", sm: "max-content" } }}
+        >
           <CardContent>
             <SkillsSection title="DB" skills={dbSkills} />
           </CardContent>
         </Card>
         <Box sx={{ mt: { xs: 2, sm: 0 } }} />
-        <Card sx={{ opacity: "0.6", width: "max-content" }}>
+        <Card
+          sx={{ opacity: "0.6", width: { xs: "24rem", sm: "max-content" } }}
+        >
           <CardContent>
             <SkillsSection title="インフラ・サーバー" skills={infraSkills} />
           </CardContent>
         </Card>
         <Box sx={{ mt: { xs: 2, sm: 0 } }} />
-        <Card sx={{ opacity: "0.6", width: "max-content" }}>
+        <Card
+          sx={{ opacity: "0.6", width: { xs: "24rem", sm: "max-content" } }}
+        >
           <CardContent>
             <SkillsSection title="その他ツール等" skills={otherSkills} />
           </CardContent>
