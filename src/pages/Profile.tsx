@@ -17,13 +17,14 @@ const Profile: React.FC = () => {
       sx={{
         width: "100%",
         textAlign: "center",
-        pt: "5rem",
+        pt: { xs: "3rem", sm: "4rem" },
+        px: { xs: "10px" },
       }}
     >
       <TitleText sx={{ fontSize: "3rem", margin: "3rem 0 1rem 0" }}>
         Profile
       </TitleText>
-      <Typography sx={{ fontSize: "1.2rem", marginBottom: "2rem" }}>
+      <Typography sx={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
         私が社会人になってから経験したことについてタイムライン形式でまとめました
       </Typography>
       <TimeLineData />

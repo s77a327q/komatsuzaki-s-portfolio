@@ -23,30 +23,30 @@ import { Typography } from "@mui/material";
 
 const timelineItems = [
   {
-    time: "2021/4 ~",
+    time: "2021/04",
     icon: <EditNoteIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "inherit",
     title: "外部研修",
     description: "Java、HTML、CSSの基礎を勉強",
   },
   {
-    time: "2021/7 ~",
+    time: "2021/07",
     icon: <LaptopMacIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "primary",
     title: "OJT",
     description: "社内売上管理システムの作成(Java)",
   },
   {
-    time: "2021/10 ~",
+    time: "2021/10",
     icon: <BuildIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "primary",
     variant: "outlined",
-    title: "保守サービスシステム",
-    description: "エクスポートデータ変換ツール作成(Java)",
+    title: "保守",
+    description: "データ変換ツール作成(Java)",
     connectorColor: "secondary.main",
   },
   {
-    time: "2022/2 ~",
+    time: "2022/02",
     icon: <CodeIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "secondary",
     title: "システム開発",
@@ -54,7 +54,7 @@ const timelineItems = [
     connectorColor: "secondary.main",
   },
   {
-    time: "2022/7 ~",
+    time: "2022/07",
     icon: <Diversity2Icon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "secondary",
     title: "メンター、OJT担当",
@@ -62,7 +62,7 @@ const timelineItems = [
     connectorColor: "secondary.main",
   },
   {
-    time: "2022/12 ~",
+    time: "2022/12",
     icon: <CodeIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "secondary",
     title: "システム開発",
@@ -70,7 +70,7 @@ const timelineItems = [
     connectorColor: "secondary.main",
   },
   {
-    time: "2023/3 ~",
+    time: "2023/03",
     icon: <NoteAddIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "secondary",
     title: "資格取得",
@@ -78,7 +78,7 @@ const timelineItems = [
     connectorColor: "secondary.main",
   },
   {
-    time: "2023/4 ~",
+    time: "2023/04",
     icon: <CodeIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "secondary",
     title: "システム開発",
@@ -86,7 +86,7 @@ const timelineItems = [
     connectorColor: "secondary.main",
   },
   {
-    time: "2023/7 ~",
+    time: "2023/07",
     icon: <Diversity2Icon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "secondary",
     title: "メンター、OJT担当",
@@ -94,7 +94,7 @@ const timelineItems = [
     connectorColor: "secondary.main",
   },
   {
-    time: "2023/8 ~",
+    time: "2023/08",
     icon: <DesignServicesIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "secondary",
     title: "設計、システム開発",
@@ -115,7 +115,15 @@ const TimeLineData = () => {
       >
         {timelineItems.map((item, index) => (
           <TimelineItem key={index} sx={{ minHeight: "10rem" }}>
-            <TimelineOppositeContent sx={{ m: "auto 0", fontSize: "1.7rem" }}>
+            <TimelineOppositeContent
+              sx={{
+                m: "auto 0",
+                fontSize: "1.3rem",
+                width: { xs: "6rem" },
+                textAlign: { xs: "left", sm: "right" },
+                padding: { xs: "0 10px 0 0", sm: "6px 16px" },
+              }}
+            >
               {item.time}
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -128,8 +136,8 @@ const TimeLineData = () => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ m: "auto 0" }}>
-              <Typography sx={{ fontSize: "2rem" }}>{item.title}</Typography>
-              <Typography sx={{ fontSize: "1.7rem" }}>
+              <Typography sx={{ fontSize: "1.5rem" }}>{item.title}</Typography>
+              <Typography sx={{ fontSize: "1.3rem" }}>
                 {item.description}
               </Typography>
             </TimelineContent>

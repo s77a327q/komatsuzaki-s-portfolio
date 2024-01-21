@@ -1,7 +1,7 @@
 // src/pages/Home.tsx
 import React from "react";
 import myImage from "../static/images/header_logo.png";
-import { Typography, Box, Grid, Rating } from "@mui/material";
+import { Typography, Box, Grid, Rating, useMediaQuery } from "@mui/material";
 
 import { styled } from "@mui/system";
 
@@ -20,9 +20,14 @@ const SkillCard: React.FC<SkillCardProps> = ({
     <div style={{ width: "10rem" }}>
       <Typography>{skill}</Typography>
     </div>
-    <div style={{ width: "10rem" }}>
-      <Typography>{experience}</Typography>
-    </div>
+    {useMediaQuery("(min-width:600px)") ? (
+      <div style={{ width: "10rem" }}>
+        <Typography>{experience}</Typography>
+      </div>
+    ) : (
+      <></>
+    )}
+
     <div style={{ width: "10rem" }}>
       <Rating precision={0.5} name="read-only" value={skillLevel} readOnly />
     </div>
@@ -54,9 +59,14 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ title, skills }) => {
         <div style={{ width: "10rem" }}>
           <Typography sx={{ fontWeight: "bold" }}>技術名</Typography>
         </div>
-        <div style={{ width: "10rem" }}>
-          <Typography sx={{ fontWeight: "bold" }}>経験年数</Typography>
-        </div>
+        {useMediaQuery("(min-width:600px)") ? (
+          <div style={{ width: "10rem" }}>
+            <Typography sx={{ fontWeight: "bold" }}>経験年数</Typography>
+          </div>
+        ) : (
+          <></>
+        )}
+
         <div style={{ width: "10rem" }}>
           <Typography sx={{ fontWeight: "bold" }}>スキルレベル</Typography>
         </div>

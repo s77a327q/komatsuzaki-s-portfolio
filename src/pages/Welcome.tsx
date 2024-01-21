@@ -53,7 +53,7 @@ const Welcome: React.FC = () => {
         id="welcome"
         sx={{
           backgroundColor: "#79c6b6",
-          height: "calc(100vh - 60px)",
+          height: { xs: "100vh", sm: "calc(100vh - 60px)" },
           width: "100%",
           paddingTop: "6rem",
           textAlign: "center",

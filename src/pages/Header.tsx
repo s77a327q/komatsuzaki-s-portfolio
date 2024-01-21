@@ -36,7 +36,13 @@ const HeaderContainer = styled(Box)({
 const Header: React.FC = () => {
   return (
     <>
-      <AppBarStyle position="sticky" color="primary">
+      <AppBarStyle
+        sx={{
+          display: { xs: "none", sm: "block" },
+        }}
+        position="sticky"
+        color="primary"
+      >
         <HeaderContainer>
           <Box sx={{ marginTop: "5px", marginLeft: "10%" }} onClick={scrollTop}>
             <img
