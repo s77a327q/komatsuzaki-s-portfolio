@@ -13,7 +13,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
   experience,
   skillLevel,
 }) => (
-  <Grid container columnSpacing={2}>
+  <Grid container columnSpacing={2} sx={{ justifyContent: "space-around" }}>
     <div style={{ width: "8rem" }}>
       <Typography>{skill}</Typography>
     </div>
@@ -52,7 +52,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ title, skills }) => {
         {title}
       </Typography>
       <Box sx={{ mt: 2 }} />
-      <Grid container columnSpacing={2}>
+      <Grid container columnSpacing={2} sx={{ justifyContent: "space-around" }}>
         <div style={{ width: "8rem" }}>
           <Typography sx={{ fontWeight: "bold" }}>技術名</Typography>
         </div>

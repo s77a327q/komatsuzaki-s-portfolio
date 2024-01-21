@@ -35,6 +35,7 @@ const SkillSet: React.FC = () => {
         height: { sm: "calc(100vh - 60px)" },
         paddingTop: { xs: "3rem", sm: "6rem" },
         px: { xs: "10px" },
+        mt: { xs: "3rem", sm: "0" },
       }}
     >
       <TitleText sx={{ fontSize: "3rem", marginBottom: "1rem" }}>

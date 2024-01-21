@@ -19,6 +19,7 @@ const Profile: React.FC = () => {
         textAlign: "center",
         pt: { xs: "3rem", sm: "4rem" },
         px: { xs: "10px" },
+        mt: { xs: "0", sm: "6rem" },
       }}
     >
       <TitleText sx={{ fontSize: "3rem", margin: "3rem 0 1rem 0" }}>
