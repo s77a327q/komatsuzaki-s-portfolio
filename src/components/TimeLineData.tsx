@@ -138,13 +138,13 @@ const TimeLineData = () => {
             <TimelineContent sx={{ m: "auto 0" }}>
               <Typography
                 sx={{
-                  fontSize: { xs: "1.4rem", sm: "1.5rem" },
+                  fontSize: { xs: "1.1rem", sm: "1.5rem" },
                   fontWeight: "bold",
                 }}
               >
                 {item.title}
               </Typography>
-              <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" } }}>
+              <Typography sx={{ fontSize: { xs: "1rem", sm: "1.3rem" } }}>
                 {item.description}
               </Typography>
             </TimelineContent>
