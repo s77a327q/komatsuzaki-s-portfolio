@@ -6,10 +6,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import BuildIcon from "@mui/icons-material/Build";
@@ -144,7 +141,7 @@ const TimeLineData = () => {
               >
                 {item.title}
               </Typography>
-              <Typography sx={{ fontSize: { xs: "1rem", sm: "1.3rem" } }}>
+              <Typography sx={{ fontSize: { xs: "0.9rem", sm: "1.3rem" } }}>
                 {item.description}
               </Typography>
             </TimelineContent>

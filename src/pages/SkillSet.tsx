@@ -48,8 +48,8 @@ const SkillSet: React.FC = () => {
         </Typography>
       ) : (
         <Typography sx={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
-          私がこれまでに学習・習得した言語やツールに<br></br>
-          ついて 星五段階で自己評価しました
+          私がこれまでに学習・習得した言語やツール<br></br>
+          について 星五段階で自己評価しました
         </Typography>
       )}
 
