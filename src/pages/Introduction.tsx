@@ -49,13 +49,14 @@ const Introduction: React.FC = () => {
             <Typography sx={{ fontSize: "1.1rem", lineHeight: "2.3rem" }}>
               はじめまして。<br></br>
               社会人3年目小松崎嶺と申します。<br></br>
-              　新卒では中小企業のSIerに入社しました。
+              　新卒では中小企業のSIerに入社しました。<br></br>
               主にWebアプリを作成しており、<br></br>
-              柔軟な対応力を活かして業務に取り組んでいます。
+              柔軟な対応力を活かし業務に取り組んでいます。
               週に約5時間の学習時間を設け、<br></br>
               新しい言語の習得に取り組んでいます。<br></br>
-              また、新人のOJT担当としてJavaの指導にあたる一方で、
-              Python、AWS、JavaScript/TypeScript(React)を活用し、<br></br>
+              また、新人のOJT担当としてJavaの指導に<br></br>
+              あたる一方で、 Python、AWS、JavaScript/TypeScript(React)を活用し、
+              <br></br>
               現在のプロジェクトに従事しています。
             </Typography>
           )}

@@ -7,6 +7,7 @@ import {
   Card,
   CardContent,
   Rating,
+  useMediaQuery,
 } from "@mui/material";
 
 import { styled } from "@mui/system";
@@ -41,9 +42,17 @@ const SkillSet: React.FC = () => {
       <TitleText sx={{ fontSize: "3rem", marginBottom: "1rem" }}>
         Skill Set
       </TitleText>
-      <Typography sx={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
-        私がこれまでに学習・習得した言語やツールについて星五段階で自己評価しました
-      </Typography>
+      {useMediaQuery("(min-width:600px)") ? (
+        <Typography sx={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
+          私がこれまでに学習・習得した言語やツールについて星五段階で自己評価しました
+        </Typography>
+      ) : (
+        <Typography sx={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
+          私がこれまでに学習・習得した言語やツールに<br></br>
+          ついて 星五段階で自己評価しました
+        </Typography>
+      )}
+
       <Grid sx={{ gap: "0 15px", justifyContent: "center" }} container>
         <Card
           sx={{ opacity: "0.6", width: { xs: "24rem", sm: "max-content" } }}

@@ -97,7 +97,7 @@ const timelineItems = [
     time: "2023/08",
     icon: <DesignServicesIcon sx={{ width: "2.5rem", height: "2.5rem" }} />,
     color: "secondary",
-    title: "設計、システム開発",
+    title: "設計、開発",
     description: "労働通知書システム開発(Django,AWS)",
     connectorColor: "secondary.main",
   },
@@ -136,8 +136,15 @@ const TimeLineData = () => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ m: "auto 0" }}>
-              <Typography sx={{ fontSize: "1.5rem" }}>{item.title}</Typography>
-              <Typography sx={{ fontSize: "1.3rem" }}>
+              <Typography
+                sx={{
+                  fontSize: { xs: "1.4rem", sm: "1.5rem" },
+                  fontWeight: "bold",
+                }}
+              >
+                {item.title}
+              </Typography>
+              <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" } }}>
                 {item.description}
               </Typography>
             </TimelineContent>

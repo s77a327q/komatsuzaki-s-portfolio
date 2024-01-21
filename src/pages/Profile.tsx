@@ -1,6 +1,6 @@
 // src/pages/Home.tsx
 import React from "react";
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, useMediaQuery } from "@mui/material";
 
 import { styled } from "@mui/system";
 import TimeLineData from "../components/TimeLineData";
@@ -25,9 +25,17 @@ const Profile: React.FC = () => {
       <TitleText sx={{ fontSize: "3rem", margin: "3rem 0 1rem 0" }}>
         Profile
       </TitleText>
-      <Typography sx={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
-        私が社会人になってから経験したことについてタイムライン形式でまとめました
-      </Typography>
+      {useMediaQuery("(min-width:600px)") ? (
+        <Typography sx={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
+          私が社会人になってから経験したことについてタイムライン形式でまとめました
+        </Typography>
+      ) : (
+        <Typography sx={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
+          私が社会人になってから経験したことについて<br></br>
+          タイムライン形式でまとめました
+        </Typography>
+      )}
+
       <TimeLineData />
     </Box>
   );
