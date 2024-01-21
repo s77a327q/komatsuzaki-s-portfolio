@@ -64,7 +64,7 @@ const Welcome: React.FC = () => {
             Welcome!!
           </TitleText>
           <TitleText style={titleTextPropsY} sx={{ fontSize: "2rem" }}>
-            Komatsuzaki's Portoforio
+            Komatsuzaki's Portfolio
           </TitleText>
           <BoxAnime style={imageTextPropsY}>
             <img
